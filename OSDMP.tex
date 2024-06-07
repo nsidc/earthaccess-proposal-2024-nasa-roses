@@ -1,0 +1,69 @@
+\section{Open Science and Data Management Plan} \label{data_mgmt}
+% Open Science and Data Management Plan
+% sample template copied from Earth Science Div word doc last updated 14 Feb 2023
+
+The \textit{earthaccess} library provides an intuitive and unified set of methods to handle authentication and credentials, and provides data search and access across all NASA Earth science data regardless of user operating system or where data are stored (either in the cloud or on-premises at a physical NASA Distributed Active Archive Center, or DAAC). The project is completely open source and aims to enable its users to adhere to the data-centric FAIR (Findable, Accessible, Interoperable, Reusable) and people-and-purpose focused CARE (Collective Benefit, Authority to Control, Responsibility, Ethics) principles. Team members and collaborators are dedicated to actively promoting open science values of quality and integrity, collective benefit, equity and fairness, and diversity and inclusiveness \citep{UNESCO2021}.
+
+% \textit{Italicized text is included for explanatory purposes throughout this template and should be omitted from the Open Science and Data Management Plan (OSDMP). This template provides one example of the format and contents of an OSDMP for use in Earth Science Division (ESD). Please follow any specific instructions for the OSDMP in a funding solicitation which may supersede the example content herein. General guidance on the SMD OSDMPs is available in the SMD Open-Source Science Guidance and on the ROSES OSDMP web page. Questions regarding this template may be directed to https://www.earthdata.nasa.gov/contact.  
+% }
+
+%%%%% DMP %%%%%
+\subsection{Data management plan}
+
+This effort is not expected to produce any scientific data. Any data produced is anticipated to be aggregate and statistical in nature (e.g. number of participants at workshops or cowork sessions, number of software downloads) and designed to document adoption and usage of the \textit{earthaccess} library. Respectively, this information will be documented within annual reports or stored openly on GitHub (as part of the \textit{earthaccess} repository or publicly available GitHub usage metrics). No personally identifiable information (beyond user-provided information in posts, which are publicly visible via the GitHub platform) will be collected as part of this effort.
+
+% \textit{A data management plan is required for all SMD-funded activities that are expected to produce scientific data. For ESD it is incorporated into the broader OSDMP as Section 1, and the ESD-specific guidance may be found in Data Management Plan Guidance for Earth Science Researcher Proposals: https://www.earthdata.nasa.gov/engage/data-management-plan-earth-science
+% }
+
+
+%%%%% Software Mgmt %%%%%
+\subsection{Software management}
+
+The software management plan is described in detail in the science/technical/management portion of this proposal. Briefly, ongoing development of the \textit{earthaccess} library will continue in Python (using the tools indicated in parentheses), with documentation (ReadTheDocs), packaging (Poetry), and testing (PyTest) triggered through a combination of Continuous Integration (CI) hooks via GitHub Actions and manually by maintainers or contributors. Streamlining and increasing automation of releases is an expected outcome of this effort; currently builds are pushed to Conda and PyPI (the Python Package Index) for easy user install via \texttt{conda/mamba} and \texttt{pip}. The \textit{earthaccess} community currently uses semantic versioning and plans to release (at a minimum) six times per year (roughly every other month).
+
+% \textit{A software management plan is required for all SMD-funded activities that are expected to produce software. Here it is incorporated into the broader OSDMP. Follow any specific requirements for the software management plan that are provided by the funding solicitation or SMD Division. (No Earth Science Division-specific requirements currently exist beyond those for SMD in this section of the OSDMP.)}
+
+% \textit{If the activity is not expected to produce software, include a statement such as:
+% “No software development is anticipated for this effort. If software is created, it will be made publicly available to the extent legally permitted per the Scientific Information Policy for the Science Mission Directorate.”
+% }
+
+% \subsubsection{Expected software types}
+% \textit{Describe the software expected to be produced from the proposed activities, including types of software to be produced, how the software will be developed, and the addition of new features or updates to existing software.  This can include the platforms used for development, project management, and community-based best practices to be included such as documentation, testing, dependencies, and versioning. 
+% }
+
+% \subsubsection{Repositories and timeline for sharing software}
+% \textit{Specify the repository(ies) that will be used to archive software arising from the activities and the schedule for making software publicly available. 
+% }
+
+% \subsubsection{Description of software that are exempt from software sharing requirements}
+% \textit{Specify software  types that are excluded from requirements to make the software publicly available and cite the relevant laws, regulations, or policies that generate the exclusion.
+% }
+
+
+%%%%% Publication Sharing %%%%%
+\subsection{Publication sharing}
+
+In additional to the code base and associated testing and documentation, project outputs will include user guides, training materials, and example workflows. All components will be freely available online via GitHub and organized and rendered into a JupyterBook, gallary of Jupyter Notebooks, or similar. They will be, at a minimum, linked from the \textit{earthaccess} documentation pages, but may live within a broader community resource (e.g. Openscapes Cloud Cookbook) or event-specific space (e.g. Hackweek JupyterBook). Resources will be versioned and archived using Zenodo, making them readily citeable and traceable.
+
+As part of this effort, we intend to submit \textit{earthaccess} for publication in the peer-reviewed Journal of Open Source Software (JOSS). This open-access publication features an open process on GitHub, where the entire peer review process is also conducted openly. Any additional publications produced by this effort (e.g. publication of training resources to the Journal of Open Source Education (JOSE)) will be submitted to publishers with a favoring of those offering full open-access publication options.
+
+% \textit{Describe the types of publications that are expected to be produced from the activities (e.g., peer reviewed manuscripts, technical reports, conference materials, and books). Outline the methods expected to be used to make the publications publicly available, which will likely include options listed under ‘How to Share Publications’ in the SMD Open-Source Science Guidance. (No Earth Science Division-specific requirements currently exist beyond those for SMD in this section of the OSDMP.)
+% }
+
+
+%%%%% Other Open Sci %%%%%
+\subsection{Other open science activities}
+
+Our team is committed to following open-science best practices, including increasing diversity among open-source software contributors and NASA data users. At present, our team includes several members who identify as members of minority communities in the software development space. Any non-listed personnel supported by this award and participants at training events will be recruited from as diverse an applicant pool as possible. All events (tutorials, workshops, hackweeks, coworking sessions, etc.) organized under or directly adjacent to this proposal will seek to minimize the barriers to entry as allowed by the hosting organization (e.g. the American Geophysical Union requires a fee for tutorial participants). While not explicitly itself an ``Open Science Activity'', by virtue of it's open-source software and community development goals, all outcomes of this project contribute to the open science ecosystem and provide a model for other communities to work openly. All project team members will be expected to earn their TOPS badge by the completion of the award.
+
+% \textit{Optionally, the OSDMP may include a description of additional open science activities associated with the project (if not described elsewhere in a proposal). This may include: holding scientific workshops and meetings openly to enable broad participation, providing project personnel with open science training or enablement, implementing practices that support the inclusion of broad, diverse communities in the scientific process as close to the start of research activities as possible, and contributions to or involvement in open-science communities. (No Earth Science Division-specific requirements currently exist beyond those for SMD in this section of the OSDMP.)
+% }
+
+
+%%%%% Roles %%%%%
+\subsection{Roles and responsibilities}
+
+All project team members, listed and anticipatory, are expected to adhere to open-source science and collaborative development best practices throughout the duration of the project. This includes following the \textit{earthaccess} Code of Conduct (\url{https://earthaccess.readthedocs.io/CODE_OF_CONDUCT.md}). PI Meier will be responsible for ensuring team members receive any needed training to obtain the skills necessary to meet -- and ideally exceed -- the minimum requirements outline in the \textit{NASA Open-Source Science Guidance} and this OSDMP.
+
+% \textit{Specify the project personnel who will ensure the implementation of the data management plan. (No Earth Science Division-specific requirements currently exist beyond those for SMD in this section of the OSDMP.)
+% }
